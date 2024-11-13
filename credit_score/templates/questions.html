@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Bureau Update</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <button id="startBtn">Start Questionnaire</button>
+
+    <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <h2>Questionnaire</h2>
+            <form id="questionForm">
+                <div id="questionContainer">
+                    <!-- Question and options will be loaded here -->
+                </div>
+                <button type="button" id="nextBtn">Next</button>
+                <button type="button" id="submitBtn" style="display:none;">Submit</button>
+            </form>
+        </div>
+        <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
